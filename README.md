@@ -2,10 +2,10 @@
 
 This project demonstrates a **Next.js 16 app** with SSR, ISR, real-time crypto prices, cron tasks, and safe HTML rendering. It uses Prisma for database operations and provides a fully functional dashboard and posts widget.
 
-![alt text](https://github.com/murdock/neo4j_node/blob/develop/assets/screenshot-1.png?raw=true)
-![alt text](https://github.com/murdock/neo4j_node/blob/develop/assets/screenshot-2.png?raw=true)
-![alt text](https://github.com/murdock/neo4j_node/blob/develop/assets/screenshot-3.png?raw=true)
-![alt text](https://github.com/murdock/neo4j_node/blob/develop/assets/screenshot-4.png?raw=true)
+![alt text](https://github.com/murdock/crypto-tracker-news-dashboard/blob/develop/assets/screenshot-1.png?raw=true)
+![alt text](https://github.com/murdock/crypto-tracker-news-dashboard/blob/develop/assets/screenshot-2.png?raw=true)
+![alt text](https://github.com/murdock/crypto-tracker-news-dashboard/blob/develop/assets/screenshot-3.png?raw=true)
+![alt text](https://github.com/murdock/crypto-tracker-news-dashboard/blob/develop/assets/screenshot-4.png?raw=true)
 
 ---
 
