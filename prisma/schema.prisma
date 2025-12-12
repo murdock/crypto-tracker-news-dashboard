@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  createdAt DateTime @default(now())
+  posts     Post[]
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String   @unique
+  content   String
+  createdAt DateTime @default(now())
+  authorId  Int
+  category  String?
+  published Boolean  @default(false)
+  views     Int      @default(0)
+  sourceUrl String?   // <-- add this
+  author    User     @relation(fields: [authorId], references: [id])
+}
+
+
+model Subscriber {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  subscribedAt DateTime @default(now())
+}
+
+model CryptoAsset {
+  id        Int          @id @default(autoincrement())
+  symbol    String       @unique
+  name      String
+  icon      String?      // optional URL or emoji
+  prices    CryptoPrice[]
+  createdAt DateTime     @default(now())
+}
+
+model CryptoPrice {
+  id        Int         @id @default(autoincrement())
+  assetId   Int
+  asset     CryptoAsset @relation(fields: [assetId], references: [id])
+  priceUsd  Float
+  source    String
+  createdAt DateTime    @default(now())
+}
+
