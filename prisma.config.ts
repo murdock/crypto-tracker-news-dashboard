@@ -1,4 +1,4 @@
-import 'dotenv/config'; // automatically loads .env
+import 'dotenv/config';
 import { defineConfig } from "prisma/config";
 import { fileURLToPath } from "url";
 import path from "path";

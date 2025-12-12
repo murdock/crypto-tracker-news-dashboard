@@ -2,7 +2,6 @@ import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 
-// Add the a11y plugin
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
@@ -10,7 +9,6 @@ const eslintConfig = defineConfig([
     plugins: ["jsx-a11y"],
     extends: ["plugin:jsx-a11y/recommended"],
     rules: {
-      // Optional: customize rules here
       "jsx-a11y/anchor-is-valid": "warn",
       "jsx-a11y/label-has-associated-control": "warn",
       "jsx-a11y/no-autofocus": "warn",
